@@ -126,6 +126,7 @@ _The file [UPGRADING.md](UPGRADING.md) contains important information about upgr
 
 ### Fixed
 
+- core, irc: ignore underline color in ANSI colors (SGR 58), instead of decoding its arguments as other attributes
 - core, irc: fix decoding of empty parameters in ANSI colors, use value 0 (for example reset) instead of ignoring them
 - core, irc: fix slow decoding of ANSI colors with many parameters
 - core: switch back to WeeChat colors as soon as the `/color` buffer is closed or not displayed any more, after a switch to terminal colors (key alt-c), instead of displaying all buffers with one terminal color until the end of the delay
